@@ -243,34 +243,119 @@
 // }
 
 
-#include <stdio.h>
+// #include <stdio.h>
 
-int main()
-{
-    // int a;
-    // printf("input integer number: ");
-    // scanf("%d",&a);
-    // switch(a)
-    // {
-    //     case 1:printf("Monday\n");
-    //     break;
-    //     case 2:printf("Tuesday\n");
-    //     break;
-    //     case 3:printf("Wednesday\n");
-    //     break;
-    //     case 4:printf("Thursday\n");
-    //     break;
-    //     case 5:printf("Friday\n");
-    //     break;
-    //     case 6:printf("Saturday\n");
-    //     break;
-    //     case 7:printf("Sunday\n");
-    //     break;
-    //     default:printf("error\n");
-    // }
-    for (int i = 0; i < 10; i++)
-    {
-        /* code */
-    }
-    
+// int main()
+// {
+//     // int a;
+//     // printf("input integer number: ");
+//     // scanf("%d",&a);
+//     // switch(a)
+//     // {
+//     //     case 1:printf("Monday\n");
+//     //     break;
+//     //     case 2:printf("Tuesday\n");
+//     //     break;
+//     //     case 3:printf("Wednesday\n");
+//     //     break;
+//     //     case 4:printf("Thursday\n");
+//     //     break;
+//     //     case 5:printf("Friday\n");
+//     //     break;
+//     //     case 6:printf("Saturday\n");
+//     //     break;
+//     //     case 7:printf("Sunday\n");
+//     //     break;
+//     //     default:printf("error\n");
+//     // }
+//     for (int i = 0; i < 10; i++)
+//     {
+//         /* code */
+//         printf("sdfsfd");
+//     }
+// }
+
+// #include <stdio.h>
+ 
+// /* 函数声明 */
+// int max(int num1, int num2);
+ 
+// int main ()
+// {
+//    /* 局部变量定义 */
+//    int a = 100;
+//    int b = 200;
+//    int ret;
+ 
+//    /* 调用函数来获取最大值 */
+//    ret = max(a, b);
+ 
+//    printf( "Max value is : %d\n", ret );
+ 
+//    return 0;
+// }
+
+// const double tt[20];
+
+// /* 函数返回两个数中较大的那个数 */
+// int max(int num1, int num2) 
+// {
+//    /* 局部变量声明 */
+//    int result;
+ 
+//    if (num1 > num2)
+//       result = num1;
+//    else
+//       result = num2;
+ 
+//    return result; 
+// }
+
+// #include <stdio.h>
+// //连续可遍历
+// enum DAY
+// {
+//       MON=1, TUE, WED, THU, FRI, SAT, SUN
+// };
+// //不连续不可遍历
+// enum
+// {
+//     ENUM_0,
+//     ENUM_10 = 10,
+//     ENUM_11
+// };
+ 
+// int main()
+// {
+//     enum DAY day;
+//     day = WED;
+//     printf("%d",day);
+//     return 0;
+// }
+
+#include <stdio.h>
+int main(){
+    // int test = "sdfs";
+    // int *p;
+    // p = &test;//指针对应的变量类型需要一致
+    // printf("变量test的地址%p/n", p);
+    // return 0;
+    int  var = 20;   /* 实际变量的声明 */
+   int  *ip;        /* 指针变量的声明 */
+   int test;
+   ip = &var; /* 在指针变量中存储 var 的地址 */
+
+   printf("var 变量的地址: %p\n", &var  );
+ 
+   /* 在指针变量中存储的地址 */
+   printf("ip 变量存储的地址: %p\n", ip );
+   test = var;
+   test = 40;
+   /* 使用指针访问值 */
+   printf("*ip 变量的值: %d\n", *ip );
+
+   int *p1 = NULL;
+   printf("*p1%p\n", p1);
+
+   return 0;
 }
