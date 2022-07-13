@@ -333,29 +333,91 @@
 //     return 0;
 // }
 
-#include <stdio.h>
-int main(){
-    // int test = "sdfs";
-    // int *p;
-    // p = &test;//指针对应的变量类型需要一致
-    // printf("变量test的地址%p/n", p);
-    // return 0;
-    int  var = 20;   /* 实际变量的声明 */
-   int  *ip;        /* 指针变量的声明 */
-   int test;
-   ip = &var; /* 在指针变量中存储 var 的地址 */
+// 
+// 
+// #include <stdlib.h>  
+// #include <stdio.h>
 
-   printf("var 变量的地址: %p\n", &var  );
+// void populate_array(int *array,size_t arraySize,int (*getNextValue)(void)){
+//     for (size_t i = 0; i < arraySize; i++)
+//     {
+//         array[i] = getNextValue();
+//     }
+// }
  
-   /* 在指针变量中存储的地址 */
-   printf("ip 变量存储的地址: %p\n", ip );
-   test = var;
-   test = 40;
-   /* 使用指针访问值 */
-   printf("*ip 变量的值: %d\n", *ip );
+// int getNextRandomValue(void){
+//     return rand();
+// }
 
-   int *p1 = NULL;
-   printf("*p1%p\n", p1);
+// 回调函数
+// void populate_array(int *array, size_t arraySize, int (*getNextValue)(void))
+// {
+//     for (size_t i=0; i<arraySize; i++)
+//         array[i] = getNextValue();
+// }
+ 
+// 获取随机值
+// int getNextRandomValue(void)
+// {
+//     return rand();
+// }
+ 
+// int main(void){
+//     char test[] = "sdfssdf";
+//     printf("%s\n", test);
+//     int myarray[10];
+//     populate_array(myarray, 10, getNextRandomValue);
+//     for (int i = 0; i < 10; i++)
+//     {
+//     printf("%d ", myarray[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
 
-   return 0;
-}
+// int main(void)
+// {
+//     int myarray[10];
+//     /* getNextRandomValue 不能加括号，否则无法编译，因为加上括号之后相当于传入此参数时传入了 int , 而不是函数指针*/
+//     populate_array(myarray, 10, getNextRandomValue);
+//     for(int i = 0; i < 10; i++) {
+//         printf("%d ", myarray[i]);
+//     }
+//     printf("\n");
+//     return 0;
+// }
+
+#include <stdio.h>
+#include<string.h>
+
+// int main ()
+// {
+//    char str1[14] = "runoob";
+//    char str2[14] = "google";
+//    char str3[14];
+//    int  len ;
+ 
+//    /* 复制 str1 到 str3 */
+//    strcpy(str3, str1);
+//    printf("strcpy( str3, str1) :  %s\n", str3 );
+ 
+//    /* 连接 str1 和 str2 */
+//    strcat( str1, str2);
+//    printf("strcat( str1, str2):   %s\n", str1 );
+ 
+//    /* 连接后，str1 的总长度 */
+//    len = strlen(str1);
+//    printf("strlen(str1) :  %d\n", len );
+ 
+//    return 0;
+// }
+
+//结构体
+
+struct Books
+{
+   char  title[50];
+   char  author[50];
+   char  subject[100];
+   int   book_id;
+} book;
